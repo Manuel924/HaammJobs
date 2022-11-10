@@ -53,7 +53,7 @@
             </div>
 
             <x-primary-button class="w-full justify-center">
-                {{ __('Iniciar sesion') }}
+                {{ __('Iniciar Sesión') }}
             </x-primary-button>
 
         </form>
