@@ -15,8 +15,13 @@
                     <x-nav-link :href="route('Vacantes.index')" :active="request()->routeIs('Vacantes.index')">
                         {{ __('Mis Vacantes') }}
                     </x-nav-link>
+
+                    <x-nav-link :href="route('Vacantes.create')" :active="request()->routeIs('Vacantes.create')">
+                        {{ __('Crear Vacantes') }}
+                    </x-nav-link>
                 </div>
             </div>
+            
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
@@ -66,6 +71,10 @@
             <x-responsive-nav-link :href="route('Vacantes.index')" :active="request()->routeIs('Vacantes.index')">
                 {{ __('Mis Vacantes') }}
             </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('Vacantes.create')" :active="request()->routeIs('Vacantes.create')">
+                {{ __('Crear Vacantes') }}
+            </x-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->
@@ -83,7 +92,7 @@
                     <x-responsive-nav-link :href="route('logout')"
                             onclick="event.preventDefault();
                                         this.closest('form').submit();">
-                        {{ __('Log Out') }}
+                        {{ __('Cerrar Sesión') }}
                     </x-responsive-nav-link>
                 </form>
             </div>

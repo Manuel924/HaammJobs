@@ -20,4 +20,7 @@ Route::get('/', function () {
 
 Route::get('/dashboard', [VacanteController::class,'index'])->middleware(['auth', 'verified'])->name('Vacantes.index');
 
+Route::get('/vacantes/create', [VacanteController::class,'create'])->middleware(['auth', 'verified'])->name('Vacantes.create');
+
+
 require __DIR__.'/auth.php';
